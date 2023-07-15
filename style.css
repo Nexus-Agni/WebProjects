@@ -1,0 +1,410 @@
+body{
+    margin:0;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    margin-top: 3rem !important;
+}
+h2:hover, h3:hover{
+    text-decoration: underline;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+}
+/* ========UTILITY CLASS========= */
+.flex{
+    display: flex;
+}
+.container{
+    max-width: 1182px;
+    padding: 0px 1.25rem;
+    margin: 0px auto;
+}
+.headingHr{
+    justify-content: center;
+    align-items: center;
+}
+.headingHr::after{
+    content: '';
+    flex: 1;
+    background-color: black;
+    height: 2px;
+}
+.btn{
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    /* background-color: white;
+    color: black; */
+    border: 2px solid black;
+}
+.btnPrimary{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.btnPrimary:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.btnSecondary{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid white;
+}
+.btnSecondary:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* ========HEADER========= */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    height: 45px;
+}
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+.log a{
+    padding: 10px; 
+    text-decoration: none;
+    color: black;
+}
+.search-box{
+    margin-left: 10px ;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-right: 5px;
+}
+.search-box input{
+    padding: 5px;
+    padding-right: 10px;
+    border: none;
+    font-size: medium;
+}
+.search-box input:focus{
+    outline: none;
+}
+.search-box input::placeholder{
+    color: black;
+    font-weight: 500;
+}
+/* ========NAVIGATION BAR========= */
+nav{
+    background-color: black;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+    border-right: solid white 1px; 
+}
+nav span{
+    color: white;
+    padding: 0px 20px;
+}
+.nav-links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* =======BIG NEWS========= */
+.bigNews{
+    height: 25rem;
+}
+.bigNewsContent{
+    width: 45%;
+}
+.bigNewsContent h2:hover{
+    text-decoration: underline;
+}
+.bigNewsImage{
+    height: inherit;
+    width: 55%;
+    background-image: url(https://t2.genius.com/unsafe/668x376/https%3A%2F%2Fimages.genius.com%2Fcfee6065bdb7c8ce48f9819f1d0d1b79.1920x1080x1.png);
+    background-size: contain;
+}
+/* =======SMALL NEWS========= */
+.smallNewsImage{
+    height: 8rem;
+    width: 100%;
+    background-image: url(https://t2.genius.com/unsafe/145x142/https%3A%2F%2Fimages.genius.com%2F86849a99862ac7de8ec9296b8288fbda.980x960x1.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.smallNews{
+    padding: 0 2rem;
+    border-right: 1px solid black;
+}
+.smallNews h3{
+    margin-bottom: 4.5rem;
+}
+.smallNews:last-child{
+    border-right: none;
+}
+/* ========CHARTS SECTION======== */
+.chartSection h1{
+    font-size: 4.5rem;
+}
+.chartHead{
+    justify-content: space-between;
+    align-items: center;
+}
+.chartHeadBox{
+    border: 2px solid black;
+    padding: 1rem 2rem;
+}
+.chartItemBox{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.25rem;
+    border-bottom: 1px solid grey;
+    font-size: 1.35rem;
+    gap: 2rem;
+}
+.chartItemBox:hover{
+    background-color: #e2e1e1;
+}
+.songNoAndImg {
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+}
+.songNoAndImg img{
+    height: 80%;
+}
+.songName{
+    width: 35%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.singerName{
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.songStats{
+    width: 20%;
+    margin-right: 1.5rem;
+    justify-content: end;
+}
+.fire{
+    justify-content: space-between;
+}
+.LoadMore{
+    width: 100%;
+    justify-content: center;
+}
+.chartBody{
+    margin-bottom: 2.25rem;
+}
+/* ========VIDEOS SECTION======== */
+.videoSection{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    height: 50rem;
+    padding-top: 2rem;
+}
+.videoContainer{
+    margin-bottom: 2rem;
+}
+.videoSection  h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+.videoSection >h4{
+    color: yellow;
+}
+.Videobox{
+    width: 1047px;
+    height: 495px;
+    background-image: url(https://t2.genius.com/unsafe/1057x595/https%3A%2F%2Fimages.genius.com%2F4b2f87415ca71b8f9cba542c82d7e79e.1000x563x1.jpg);
+    justify-content: end;
+}
+.Videobox i {
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.contentBox{
+    width: 30%;
+    text-align: left;
+    margin-left: 4rem;
+}
+.contentBox h1{
+    font-size: 2.25rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.contentBox h3{
+    font-size: 1.5rem ;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.contentBox .headingHr::after{
+    content: '';
+    flex: 1;
+    background-color: white;
+    height: 2px;
+}
+/* ========LATEST SECTION======== */
+.latestNewsContainer {
+    flex-wrap: wrap;
+    margin: auto;
+    padding-left:  2.5rem;
+}
+.latest  h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+.latest h4{
+    text-align: center;
+    color: #e52b2b;
+    margin-top: 0;
+    font-weight: 500;
+}
+.latestNewsItems{
+    width: 20%;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+}
+.latestNewsImage {
+    width: 100%;
+    height: 8rem;
+    background-image: url(https://t2.genius.com/unsafe/177x177/https%3A%2F%2Fimages.genius.com%2F51e5180d433a1aef6accd6a6f247bd58.1000x1000x1.png);
+    background-size: contain;
+    background-position: center;
+}
+.sponsored{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+}
+/* ========COMMUNITY SECTION======== */
+.communitySection  h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+.communitySection h4{
+    text-align: center;
+    color: #e52b2b;
+    margin-top: 0;
+    font-weight: 500;
+}
+.geniusWorkButton  button {
+    margin: 0 2rem;
+}
+.communityBody{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.communityItem{
+    padding: 0.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.25rem;
+    border-bottom: 1px solid grey;
+    font-size: 1.35rem;
+    gap: 2rem;
+}
+.rankAndLogo{
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.rankAndLogo img {
+    border-radius: 50%;
+}
+.scholarName{
+    width: 80%;
+    justify-content: start;
+}
+.iqPoints{
+    width: 10%;
+    justify-content: end;
+}
+.communityItem:hover{
+    background-color: #e2e1e1;
+}
+.gray{
+    font-size: 12px;
+    color:#808081;
+}
+/* ========FOOTER======== */
+footer{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    height: 28rem;
+    margin-top: 3rem;
+    border-bottom: 2px solid #808081 ;
+    margin-bottom: 0;
+}
+.footLeftBox{
+    width: 60%;
+    padding-top: 3rem;
+    /* font-size: 1.35rem; */
+    height: 100%;
+}
+.footIcons{
+    width: inherit;
+    gap: 1.5rem;
+    font-size: 1.75rem;
+}
+.footCenterBox, .footRightBox{
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    padding-top: 4.5rem;
+    gap: 1.25rem;
+    margin-left: 5rem;
+    height: 100%;
+}
+footer a{
+    border: none;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+/* ========EXTENDED FOOTER======== */
+.extendedFoot{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 10rem;
+    margin-top: 0 !important;
+    font-size: 1rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+.extendedFoot .flex{
+    padding-top: 2rem;
+    width: 100%;
+}
+#footspan{
+    margin-right: 1rem;
+}
+.wrap{
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+}
+.wrap span{
+    margin-right: 1rem;
+    padding-left: 0.25rem;
+}
